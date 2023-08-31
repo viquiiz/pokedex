@@ -20,11 +20,13 @@
 	opacity: 3;
 	text-align: right;
 	font-size: .625rem;
+	counter-style: ;
 }
 
 .pokemon .name {
 	color: #fff;
 	margin-bottom: 0;
+	text-transform:capitalize;
 }
 
 .pokemon .detail .types {
