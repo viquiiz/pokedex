@@ -145,7 +145,8 @@
 	color: #fff;
 	padding: .25rem .5rem;
 	margin: .25rem 0;
-	font-size: .625rem;
+	font-size: .900rem;
+ 	cursor: pointer;
 }
 
 @media screen and (min-width: 380px) {
