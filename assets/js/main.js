@@ -9,28 +9,29 @@ function loadPokemonItems(offset, limit) {
 	pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
 		const newHtml = pokemons.map((pokemon) => `
 			<li class="pokemon ${pokemon.type}">
- 				<button class="modal-button" type="button">
-	  				<div class="number">
-						<span>#${pokemon.number}</span>
-	  				</div>
-
-	 				<div class="name">
-	 					<span>${pokemon.name}</span>
-	   				</div>
+				<div class="number">
 					
-					<div class="detail">
-						<ol class="types">
-							${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
-						</ol>
-						
+				</div>
+
+				<div class="name">
+					<span>${pokemon.name}</span>
+				</div>
+				
+				<div class="detail">
+					<ol class="types">
+						${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
+					</ol>
 						<img src="${pokemon.photo}" alt="${pokemon.name}">
-					</div>
-	 			</button>
+				</div>
+				<div class="show-more">
+					<button id="modal-button" onclick="loadModalInfo(${pokemon.id})">Show Information</button>
+				</div>
 			</li>
 		`).join('')
 		pokemonList.innerHTML += newHtml
 	})
 }
+
 
 loadPokemonItems(offset, limit)
 

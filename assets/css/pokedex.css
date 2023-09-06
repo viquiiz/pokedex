@@ -91,7 +91,6 @@
 	color: #fff;
 	opacity: 3;
 	text-align: right;
-	text-decoration: 
 	font-size: .625rem;
 	text-shadow: 0.8px 0.8px 1px #393838;
 }
@@ -134,6 +133,25 @@
 	align-self: flex-end;
 } 
 
+#modal-button {
+	background-color: #6c79db;
+	border: none;
+	border-radius: 0.4rem;
+	color: #fff;
+	padding: .25rem .5rem;
+	margin: .25rem 0;
+	font-size: .750rem;
+ 	cursor: pointer;
+}
+
+#modal-button:hover {
+	background-color: #4b5391;
+}
+
+.show-more {
+	align-self: center;
+}
+
 .pagination {
 	display: flex;
 	flex-direction: row;
@@ -152,6 +170,10 @@
 	margin: .25rem 0;
 	font-size: .900rem;
  	cursor: pointer;
+}
+
+.pagination button:hover {
+		background-color: #4b5391;
 }
 
 @media screen and (min-width: 380px) {
