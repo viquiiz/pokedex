@@ -14,21 +14,18 @@ function loadModalInfo(pokemonId) {
    				<span class="modal-pokemon-name">${pokemon.name}</span>
 				<span class="modal-pokemon-number">#${pokemon.number}</span>
 			</div>
+			<div class="modal-types">
+			<ol class="modal-pokemon-types">
+				${pokemon.types.map((type) => `<li class="modal-pokemon-type ${type}">${type}</li>`).join('')}
+			</ol>
+			</div>
    			<div class="modal-img">
 	  			<img src="${pokemon.photo}" alt="${pokemon.name}">
 	  		</div>
-	 		<div class="modal-types">
-				<ol class="modal-pokemon-types">
-					${pokemon.types.map((type) => `<li class="modal-pokemon-type ${type}">${type}</li>`).join('')}
+	 		<div class="modal-poke-stats ${pokemon.type}">
+				<ol class="modal-pokemon-stats">
+					${pokemon.stats.map((elem) => `<li class="">${elem.stat}: ${elem.value}</li>`).join('')}
 				</ol>
-			</div>
-	 		<div class="modal-poke-stats">
-				<span>Height: ${pokemon.height}</span>
-				<span>Weight: ${pokemon.weight}</span>
-				<span>Hp: HP AQUI</span>
-				<span>Attack: atk aqui</span>
-				<span>Defense: def aqui</span>
-				<span>Speed: speed aqui</span>
 			</div>
 	 	`
 		modalContent.innerHTML = pokemonInfo

@@ -21,6 +21,22 @@ function convertPokeApiDetailToPokemon(pokeDetail) {
 	pokemon.abilities = abilities
 	pokemon.ability = ability
 
+	// Gabi que fez
+	let stats = [];
+	let excludeStats = ['special-attack', 'special-defense'];
+
+	pokeDetail.stats.forEach(elem => {
+		let stat = elem.stat.name;
+		let value = elem.base_stat;
+		if(!excludeStats.includes(stat)) {
+			stats.push({stat: stat, value: value})
+		}
+		//pokemon[stat] = value;
+	})
+
+	pokemon.stats = stats;
+	console.log(pokemon)
+
 	return pokemon
 }
 

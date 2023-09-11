@@ -17,6 +17,7 @@
   padding: 20px;
   border: 1px solid #888;
   width: 80%; 
+  border-radius: .8rem;
 }
 
 .close-modal {
@@ -26,7 +27,7 @@
 	font-weight: bold;
 	background-color: #6c79db;
 	border: none;
-	border-radius: 0.1rem;
+	border-radius: 0.2rem;
 }
 
 .close-modal:hover,
@@ -45,7 +46,7 @@
 
 .modal-pokemon-name {
 	padding: 0;
-	text-transform:capitalize;
+	text-transform: capitalize;
 	color: #000;
 	font-size: 2.4rem;
 }
@@ -85,5 +86,12 @@
 }
 
 .modal-poke-stats {
-	padding: 0;
+	filter: brightness(1.1);
+	border-radius: .8rem;
+	display: flex;
+}
+
+.modal-pokemon-stats {
+	margin: 1rem 0;
+	text-transform: capitalize;
 }
