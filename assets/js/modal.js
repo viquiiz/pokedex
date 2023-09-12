@@ -24,7 +24,12 @@ function loadModalInfo(pokemonId) {
 	  		</div>
 	 		<div class="modal-poke-stats ${pokemon.type}">
 				<ol class="modal-pokemon-stats">
-					${pokemon.stats.map((elem) => `<li class="">${elem.stat}: ${elem.value}</li>`).join('')}
+					${pokemon.stats.map((elem) => `<li class="stats-li">
+						<p>${elem.stat}: ${elem.value}</p>
+						<div class="stats-bar ${pokemon.type}">
+							<div style="width: ${elem.value}%"></div>
+						</div>
+					</li>`).join('')}
 				</ol>
 			</div>
 	 	`
