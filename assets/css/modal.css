@@ -76,8 +76,7 @@
 }
 
 .modal-img {
-	display: flex;
-    justify-content: center;
+	display: contents;
 }
 
 .modal-img img{

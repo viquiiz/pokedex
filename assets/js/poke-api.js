@@ -30,7 +30,7 @@ function convertPokeApiDetailToPokemon(pokeDetail) {
 		if(!excludeStats.includes(stat)) {
 			stats.push({stat: stat, value: value})
 		}
-		//pokemon[stat] = value;
+		//pokemon[stat] = value; (se for usar 1 valor ao invés da lista de valores)
 	})
 
 	pokemon.stats = stats;
