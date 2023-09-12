@@ -77,12 +77,13 @@
 
 .modal-img {
 	display: flex;
-    justify-content: right;
+    justify-content: center;
 }
 
 .modal-img img{
 	padding: 0;
 	height: 300px;
+	max-width: 100%;
 }
 
 .modal-poke-stats {
