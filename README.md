@@ -14,7 +14,7 @@
 <br>
 
 <div align="center">
-    <img alt="Gif preview do projeto" height="300" src="./assets/img/pokedex-desktop.gif">
+    <img alt="Gif preview do projeto" height="380" src="./assets/img/pokedex-desktop.gif">
     <p>Visualização do projeto no navegador</p>
 </div>
 
