@@ -20,7 +20,9 @@
 
 <br>
 
-<h4>Visite a página <a href="https://viquiiz.github.io/pokedex/">aqui</a> ou siga as instruções abaixo para rodar localmente:</h4>
+<p>Visite a página <a href="https://viquiiz.github.io/pokedex/">aqui</a> ou siga as instruções abaixo para rodar localmente:</p>
+
+<h4>Instalando o projeto:</h4>
 
 1- `git clone https://github.com/viquiiz/pokedex.git`
 
@@ -28,6 +30,8 @@
 
 3- `npm install -g http-server`
 
-4- `http-server ./`
+<h4>Rodando o projeto:</h4>
 
-5- Acessar no navegador: `http://localhost:8080`
+1- `http-server ./`
+
+2- Acessar no navegador: `http://localhost:8080`
