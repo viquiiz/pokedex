@@ -15,13 +15,19 @@
 
 <div align="center">
     <img alt="Gif preview do projeto" height="300" src="./assets/img/pokedex-desktop.gif">
-    <p>Visualização do projeto para desktop</p>
+    <p>Visualização do projeto no navegador</p>
 </div>
 
+<br>
 
+<h4>Visite a página <a href="https://viquiiz.github.io/pokedex/">aqui</a> ou siga as instruções abaixo para rodar localmente:</h4>
 
-<!-- <div align="center">
-    <img alt="Imagem do projeto em celular" width="150px" src="./assets/img/pokedex-mobile1.jpg">
-    <img alt="Imagem do projeto em celular" width="150px" src="./assets/img/pokedex-mobile2.jpg">
-    <p>Visualização do projeto mobile</p>
-</div> -->
+1- `git clone https://github.com/viquiiz/pokedex.git`
+
+2- `npm install`
+
+3- `npm install -g http-server`
+
+4- `http-server ./`
+
+5- Acessar no navegador: `http://localhost:8080`
